@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+# close stderr
+
+exec 2&lt;&amp;-
+
+# set options here
+
+enscript_opt="-2Gr --line-numbers -o -"
+tempfile="/tmp/texmate-print.$$.pdf"  # note: "$$" is the current pid
+pstopdf_opt="-i -o $tempfile"
+
+
+# create the pdf and open it
+
+enscript $enscript_opt | pstopdf $pstopdf_opt
+open $tempfile
+rm $tempfile
+
+# input: Entire Document, output: Discard</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Print with Line Numbers</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>32BDCDF2-EB7F-4804-A699-271A5C9E8954</string>
+</dict>
+</plist>

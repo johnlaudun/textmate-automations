@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Author(s):	
+Date:		
+Title:		
+Publisher:	
+ISBN:		</string>
+	<key>name</key>
+	<string>Book Order Entry</string>
+	<key>tabTrigger</key>
+	<string>bko</string>
+	<key>uuid</key>
+	<string>99F46C56-30EC-41DD-BA2E-60C0A26133D5</string>
+</dict>
+</plist>

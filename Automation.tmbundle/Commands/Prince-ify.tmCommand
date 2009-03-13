@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>    # temporary file for the output xml
+    tmp_xml="/tmp/${TM_FILENAME%.*}.xml"
+    
+    # final pdf destination
+    dest=${TM_FILEPATH%.*}.pdf
+    
+    # HTML header
+    cat &gt; $tmp_xml &lt;&lt;EOD
+    &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;head&gt;
+    	&lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div id="header"&gt;
+      &lt;img src="/usr/local/prince/images/logomark_RGB.png" /&gt;
+    &lt;/div&gt;
+    &lt;div id="footer"&gt;
+      &lt;div&gt;
+        &lt;img src="/usr/local/prince/images/logo_horizontal_eng_RGB.png" /&gt;
+      &lt;/div&gt;
+      &lt;div class="address"&gt;info@incomumdesign.com&lt;br /&gt;www.incomumdesign.com&lt;/div&gt;
+      &lt;div class="address"&gt;Rua Emilio Berla, nÂ° 180&lt;br /&gt;Copacabana, RJ 22061-060&lt;/div&gt;
+      &lt;div class="address"&gt;+55 (21) 9997-0593&lt;br /&gt;+55 (21) 9997-0594&lt;/div&gt;
+    &lt;/div&gt;
+    EOD
+    
+    # this is the body of the document
+    markdown $TM_FILEPATH &gt;&gt; $tmp_xml
+    
+    # close up the tags
+    cat &gt;&gt; $tmp_xml &lt;&lt;EOD
+    &lt;/body&gt;
+    &lt;/html&gt;
+    EOD
+    
+    # convert temp xml to pdf
+    prince -s /usr/local/prince/stylesheets/INCOMUM_letterhead_en_a4.css $tmp_xml $dest
+    
+    # remove temp files
+    rm $tmp_xml
+    
+    # show result as HTML
+    echo "&lt;meta http-equiv='refresh' content='0; tm-file://$dest'&gt;"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Prince-ify</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>AA98B4B2-4E04-427A-94F1-FA7DF48D5F6B</string>
+</dict>
+</plist>

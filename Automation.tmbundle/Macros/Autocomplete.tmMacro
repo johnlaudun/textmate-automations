@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>nextCompletion:</string>
+		</dict>
+	</array>
+	<key>keyEquivalent</key>
+	<string></string>
+	<key>name</key>
+	<string>Autocomplete</string>
+	<key>scopeType</key>
+	<string>local</string>
+	<key>uuid</key>
+	<string>6188135D-BCE2-4FE7-80FC-0FFA746DD492</string>
+</dict>
+</plist>

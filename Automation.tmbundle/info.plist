@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Automation</string>
+	<key>ordering</key>
+	<array>
+		<string>B5605852-0EBC-42F7-B681-883833B15C78</string>
+		<string>075AA91E-331A-47FB-98C1-C1A686F81CA0</string>
+		<string>D8216195-2792-4F7D-94C2-E9E1DDE2FBD3</string>
+		<string>2A40660D-A470-4779-970D-8FB89BC3EB13</string>
+		<string>ADCAE235-98BF-4895-AEC2-2E22571F6FB0</string>
+		<string>56B05535-1ACD-4E55-B9FC-3BC1FAA3DBE1</string>
+		<string>99D9DBC0-E03E-46B9-9E73-13F58DCDB55B</string>
+		<string>A33C3AEA-E254-4E44-9568-5D32D230E0CF</string>
+		<string>D339EB72-A265-4085-BB53-184B7D358DAC</string>
+		<string>7CC7E11B-02BE-4F8D-9E8F-396D2CB74A98</string>
+		<string>6EF937B0-7C3D-4600-8516-CAB129BE3AD6</string>
+		<string>F8B19103-1D82-4D38-958B-E705C64A7879</string>
+		<string>6188135D-BCE2-4FE7-80FC-0FFA746DD492</string>
+		<string>8A9EF714-520F-4303-964B-BAA9B5063D1E</string>
+		<string>7645AE67-8D6E-48C5-8A03-A476C8F2F149</string>
+		<string>C5EF3C38-DED6-4308-90C1-BE75B4430332</string>
+		<string>4B4448A4-5FE6-4B0E-A1DA-EC9EC99695AA</string>
+		<string>99F46C56-30EC-41DD-BA2E-60C0A26133D5</string>
+		<string>CF03FFDD-03E6-4172-85AD-F024305BF8DE</string>
+		<string>AA98B4B2-4E04-427A-94F1-FA7DF48D5F6B</string>
+		<string>32BDCDF2-EB7F-4804-A699-271A5C9E8954</string>
+		<string>7F1D412B-8D65-44D4-B50D-A8695F24F6CA</string>
+	</array>
+	<key>uuid</key>
+	<string>424EF3D6-E6FB-46E9-A26B-98E318107153</string>
+</dict>
+</plist>

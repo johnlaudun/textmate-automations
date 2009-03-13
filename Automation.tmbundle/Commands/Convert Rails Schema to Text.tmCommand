@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+# Use this command to change an ActiveRecord schema.rb file in to a
+# simple text version of your tables and columns.  Mostly used to create
+# docs.
+
+input = STDIN.read
+
+input.gsub!(/^(\s*)create_table\s+"(.+?)".*$/, "\\1&lt;b&gt;\\2&lt;/b&gt;")
+input.gsub!(/t\.column\s+"(\w+?)",\s*:(\w+).*$/, "* \\1\t\\2")
+input.gsub!(/^(\s*)end\s*$/, '')
+
+output = String.new
+input.each_line do |line|
+  tab = line.index("\t") || 0
+  output &lt;&lt; line.gsub("\t", " " * (40 - tab))
+end
+
+print output</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>~d</string>
+	<key>name</key>
+	<string>Convert Rails Schema to Text</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>A33C3AEA-E254-4E44-9568-5D32D230E0CF</string>
+</dict>
+</plist>

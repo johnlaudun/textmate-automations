@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Date:			${1:`date +%Y-%m-%d`}  
+Location(s):	$2  
+Individual(s):	$3  
+Topic(s):		$4  
+Mileage Out:	$5  
+Mileage In:		$6  
+Mileage Total:	$7  
+Media:			IMG_$8 - IMG_$9
+
+</string>
+	<key>name</key>
+	<string>Fieldwork Log Entry</string>
+	<key>tabTrigger</key>
+	<string>fwk</string>
+	<key>uuid</key>
+	<string>ADCAE235-98BF-4895-AEC2-2E22571F6FB0</string>
+</dict>
+</plist>

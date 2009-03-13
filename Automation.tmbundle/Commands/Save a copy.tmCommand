@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>bundleUUID</key>
+	<string>C668FE10-7DA2-4FBF-BE1B-6F992EC7D10E</string>
+	<key>command</key>
+	<string>filename="$(CocoaDialog filesave --title 'Save a copy')"
+[ -n "$filename" ] &amp;&amp; cat &gt;"$filename"</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>@d</string>
+	<key>name</key>
+	<string>Save a copy</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>uuid</key>
+	<string>D339EB72-A265-4085-BB53-184B7D358DAC</string>
+</dict>
+</plist>

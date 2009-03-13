@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>`date +%Y-%m-%d`</string>
+	<key>name</key>
+	<string>Date Stamp</string>
+	<key>scope</key>
+	<string>text</string>
+	<key>tabTrigger</key>
+	<string>ds</string>
+	<key>uuid</key>
+	<string>D8216195-2792-4F7D-94C2-E9E1DDE2FBD3</string>
+</dict>
+</plist>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Title:	$1  
+Author:	John Laudun  
+Date:	${2:`date +%Y-%m-%d`}  
+Email:	jlaudun@mac.com  
+CSS:	http://localhost/~jjl/styles/memo.css  
+
+&lt;p&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+
+Date: $2  
+To: $3  
+From: John Laudun  
+Re:	$4  
+
+$0</string>
+	<key>name</key>
+	<string>memo</string>
+	<key>tabTrigger</key>
+	<string>memo</string>
+	<key>uuid</key>
+	<string>7F1D412B-8D65-44D4-B50D-A8695F24F6CA</string>
+</dict>
+</plist>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>moveLeft:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>action</key>
+				<string>findNext</string>
+				<key>findInProjectIgnoreCase</key>
+				<false/>
+				<key>findString</key>
+				<string>\s*</string>
+				<key>ignoreCase</key>
+				<false/>
+				<key>regularExpression</key>
+				<true/>
+				<key>wrapAround</key>
+				<true/>
+			</dict>
+			<key>command</key>
+			<string>findWithOptions:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveRight:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>action</key>
+				<string>findNext</string>
+				<key>findInProjectIgnoreCase</key>
+				<false/>
+				<key>findString</key>
+				<string>(?m:([\t ]*)&lt;([\w-]+)([^&gt;]*?)&gt;(.*?)\1&lt;\/\2&gt;)|([\t ]*)&lt;([\w-]+)([^&gt;]*?)\/&gt;|(?&lt;=\W[:$@])\w+|"[^"]*"(?=([^"]*"[^"]*")*(?![^"]*"))|(class|def)\s+\w+[ \(]*[\w ,]*[ \)]*</string>
+				<key>ignoreCase</key>
+				<false/>
+				<key>regularExpression</key>
+				<true/>
+				<key>wrapAround</key>
+				<true/>
+			</dict>
+			<key>command</key>
+			<string>findWithOptions:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>beforeRunningCommand</key>
+				<string>nop</string>
+				<key>command</key>
+				<string>"$TM_BUNDLE_SUPPORT/bin/jump_filter.rb"</string>
+				<key>disableOutputAutoIndent</key>
+				<true/>
+				<key>fallbackInput</key>
+				<string>none</string>
+				<key>input</key>
+				<string>selection</string>
+				<key>keyEquivalent</key>
+				<string></string>
+				<key>name</key>
+				<string>Jump NEXT — Duane Johnson</string>
+				<key>output</key>
+				<string>insertAsSnippet</string>
+				<key>uuid</key>
+				<string>455D8308-41E5-4DED-9970-23B7386822F1</string>
+			</dict>
+			<key>command</key>
+			<string>executeCommandWithOptions:</string>
+		</dict>
+	</array>
+	<key>keyEquivalent</key>
+	<string></string>
+	<key>name</key>
+	<string>Jump NEXT</string>
+	<key>scopeType</key>
+	<string>local</string>
+	<key>uuid</key>
+	<string>8A9EF714-520F-4303-964B-BAA9B5063D1E</string>
+</dict>
+</plist>
